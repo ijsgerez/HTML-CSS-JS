@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Proyecto-final</title>
+</head>
+
+<body onscroll="cambiar_navegar_juego()">
+    
+    <!-- Agregar header -->
+    <header class="encabezado_juego">
+    
+        <nav>
+
+            <a href="./index.html">
+
+                <!-- <img id="logo_raiz" src=""> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="200" height="100">
+
+                    <rect class="monitor2" x="50" y="10" width="100" height="50" stroke="black" stroke-width="3" fill="grey"></rect>
+                    <rect class="monitor1" x="55" y="15" width="90" height="40" stroke="black" stroke-width="3" fill="black"></rect>
+                    <rect class="monitor1" x="98" y="60" width="4" height="20" stroke="black" stroke-width="3" fill="black"></rect>
+
+                    <line x1="60" y1="20" x2="110" y2="20" stroke="green" stroke-width="3"></line>
+                    <line x1="60" y1="25" x2="110" y2="25" stroke="green" stroke-width="3"></line>
+                    <line x1="60" y1="30" x2="80" y2="30" stroke="green" stroke-width="3"></line>
+                    <line x1="60" y1="35" x2="140" y2="35" stroke="green" stroke-width="3"></line>
+                    <line x1="60" y1="40" x2="140" y2="40" stroke="green" stroke-width="3"></line>
+                    
+                    <ellipse class="monitor1" cx="100" cy="80" rx="25" ry="5" stroke="black" stroke-width="3" fill="black"></ellipse>
+                
+                </svg>
+            
+            </a>
+
+            <ul class="menu_navegacion">
+                <li><a class="ancla_menu" href='./historia.html'>HISTORIA</a></li>
+                <li><a class="ancla_menu" href='./juego.html'>JUGUEMOS</a></li>
+            </ul>
+
+        </nav>
+    
+        <h1 id="h1_juego">JUGUEMOS UN POCO</h1>
+
+    </header>
+
+    <main>
+
+        <h2 id="h2_juego" class="espacio-titulo">Armemos el rompecabezas y veamos que imagen es...</h2>
+        <section class="juego">
+
+            <div class="juego_posicion_arriba">
+
+                <img class="imagen_rompecabezas" id="imagen2_juego" src="./imagenes/rompe2.png" alt="opcion_rompecabezas">
+
+                <div id="contenedor_cajas"> 
+                    <!-- utilizado para manipular eñ espacio entre las cajas -->
+
+                    <div id="caja1_juego" class="caja_rompecabezas">
+                        <p>Arrastre y suelte la imágene aquí</p>
+                    </div>
+
+                    <div id="caja2_juego" class="caja_rompecabezas">
+                        <p>Arrastre y suelte la imágene aquí</p>
+                    </div>
+
+                    <div id="caja3_juego" class="caja_rompecabezas">
+                        <p>Arrastre y suelte la imágene aquí</p>
+                    </div>
+
+                </div>
+
+                <img class="imagen_rompecabezas" id="imagen1_juego" src="./imagenes/Rompe1.png" alt="opcion_rompecabezas">
+
+            </div>
+
+            <div class="juego_posicion_abajo">
+                <img class="imagen_rompecabezas" id="imagen3_juego" src="./imagenes/Rompe3.png" alt="opcion_rompecabezas">
+            </div>
+
+        </section>
+
+        <button id="boton_reiniciar">Reiniciar</button>
+
+    </main>
+    
+
+    <footer class="pie_pagina">
+        <img id="imagen_pie_pagina" src="./imagenes/logo.png" alt="logo_footer">
+        <h3 id="h3_footer">PROGRAMACION<br> E<br> HISTORIA</h3>
+        <p>Sitio con fines educativos - Replicado por Javier S. Gerez</p>
+    </footer>
+
+    <!-- ver de ponerlo en el head -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./script_juego.js"></script>
+
+</body>
+
+</html>
