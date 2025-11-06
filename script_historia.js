@@ -74,7 +74,6 @@ $("#boton_play").click(()=>{
    $("video")[0].play();
    tiempo_reproduccion=setInterval(()=>{
       $("#tiempo_reproduccion_html")[0].textContent=s2mmss($("video")[0].currentTime);
-      //$("#duracion_video")[0].textContent=s2mmss($("video")[0].currentTime);
    },1000)
 })
 
@@ -128,5 +127,4 @@ function s2mmss(s){
 // para establercer la duracion
 window.addEventListener('load', ()=>{ // He prabado con $(window).load pero no funciono
    $("#duracion_video")[0].textContent=s2mmss($("video")[0].duration);
-   //console.log($("video")[0].duration)
 })

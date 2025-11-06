@@ -10,10 +10,6 @@ h2{
 
 /* ////////////////// */
 
-/* svg{
-    border: solid;
-} */
-
 .monitor1, .monitor2{
     animation-name: animacion_logo_1;
     animation-timing-function: ease;
@@ -84,29 +80,7 @@ h1{
     text-shadow: 2px 2px #808080, 6px 6px black;
     margin: auto;
     text-align: center;
-    /* position: absolute; */
-    /* justify-content: center;
-    align-items: center; */
-    
 }
-
-/* #h1_index{
-    /* top: 50%;
-    left: 5%;
-    text-align: center;
-} */
-
-/* #h1_historia{
-    top: 25%;
-    left: 10%;
-    text-align: center;
-} */
-
-/* #h1_juego{
-    top: 30%;
-    left: 25%;
-    text-align: center;
-} */
 
 h2{
     font-weight: 400;
@@ -160,31 +134,29 @@ nav{
 }
 
 .tarjetas_contenido{
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     width: 450px;
     height: 500px;
-    visibility: hidden; /* FIXME */
+    visibility: hidden;
 
 }
 
-/* FIXME: Pasar al JS */
+.tarjetas_contenido, .pie_pagina{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /*
 animation: name duration timing-function delay iteration-count direction fill-mode;
 */
 
-/* .tarjeta_historia{
-    visibility: hidden;
-} */
 
 .contenido_historia_{
     animation-name: hacia_derecha;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
-    visibility: visible; /* fixme */
+    visibility: visible;
 }
 
 .contenido_juego_{
@@ -218,9 +190,6 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 /* pie de pagina */
 
 .pie_pagina{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #2f3645;
     padding: 90px;
     margin-top: 100px;
@@ -268,7 +237,7 @@ animation: name duration timing-function delay iteration-count direction fill-mo
     width: 50%;
 }
 
-.descripcion_historia{ /* FIXME */
+.descripcion_historia{
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -306,7 +275,6 @@ animation: name duration timing-function delay iteration-count direction fill-mo
 }
 
 .imagen_boton{ /* utilizada para dimensionar todas las imagenes del mismo tamaño. Las añadidas son bastante mas grandes */
-    width: 15px;
     height: 15px;
 }
 
@@ -460,7 +428,6 @@ animation: name duration timing-function delay iteration-count direction fill-mo
         gap: 0px;
     }
 }
-
 /* ///////////////////////////////////////// */
 
 .comprimir_caja{
@@ -534,10 +501,6 @@ main{
     }
 
 }
-
-/* .imagen_rompecabezas{
-
-} */
 
 #imagen2_juego{
     transform: rotateZ(8deg);

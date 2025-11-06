@@ -48,10 +48,6 @@ imagen3.addEventListener("dragstart",(event)=>{
     event.dataTransfer.setData("Text", idImagen);
 })
 
-// imagen2.addEventListener("dragend",()=>{
-//    console.log("Se solto");
-// })
-
 // dragover()
 caja1.addEventListener("dragover",(event)=>{
     event.preventDefault();
@@ -80,8 +76,7 @@ caja1.addEventListener("drop",(event)=>{
 
     /* verificacion de resultado: ¿gano o perdio? */
     if(contador_drop==3){
-        console.log("Finalizo")
-        // realizar animaciones con las imagenes #contenedor_cajas
+        //console.log("Finalizo")
         
         // quitar border a las cajas
         let cajas_=document.querySelectorAll(".caja_rompecabezas")
@@ -105,7 +100,7 @@ caja1.addEventListener("drop",(event)=>{
             },4000)
         
         } else{
-            console.log("perdio")
+            //console.log("perdio")
 
             document.querySelector("#contenedor_cajas").classList.add("expandir_caja");
 
@@ -138,8 +133,7 @@ caja2.addEventListener("drop",(event)=>{
 
     /* verificacion de resultado: ¿gano o perdio? */
     if(contador_drop==3){
-        console.log("Finalizo")
-        // realizar animaciones con las imagenes #contenedor_cajas
+        //console.log("Finalizo")
         
         // quitar border a las cajas
         let cajas_=document.querySelectorAll(".caja_rompecabezas")
@@ -163,7 +157,7 @@ caja2.addEventListener("drop",(event)=>{
             },4000)
         
         } else{
-            console.log("perdio")
+            //console.log("perdio")
 
             document.querySelector("#contenedor_cajas").classList.add("expandir_caja");
 
@@ -196,8 +190,7 @@ caja3.addEventListener("drop",(event)=>{
 
     /* verificacion de resultado: ¿gano o perdio? */
     if(contador_drop==3){
-        console.log("Finalizo")
-        // realizar animaciones con las imagenes #contenedor_cajas
+        //console.log("Finalizo")
         
         // quitar border a las cajas
         let cajas_=document.querySelectorAll(".caja_rompecabezas")
@@ -221,7 +214,7 @@ caja3.addEventListener("drop",(event)=>{
             },4000)
         
         } else{
-            console.log("perdio")
+            //console.log("perdio")
 
             document.querySelector("#contenedor_cajas").classList.add("expandir_caja");
 
